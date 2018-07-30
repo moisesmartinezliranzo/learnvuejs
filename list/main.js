@@ -1,9 +1,10 @@
 new Vue({
     el: '#main',
     data: {
-        people: ['Juan', 'Maria', 'Jose', 'Antonia']
+        people: ['Juan', 'Maria', 'Jose', 'Antonia'],
+        title:"Listas con VueJS 2",
+        name: '',
     },
-    name: '',
     methods: {
         addName: function () {
             this.people.push(this.name);

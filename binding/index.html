@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Listas Vuejs 2</title>
+    <title>Data Binding Vue js 2</title>
 </head>
+
 <body>
 
     <div id="main">
-        <ul>
-            <li v-for="item in people">{{ item }}</li>
-        </ul>
-        <input type="text" v-model="name" v-on:keyup.enter="addName">
+        <input type="text" v-model="info">
+        <p>Texto de relleno {{info}}</p>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.5.1/vue-resource.js"></script>
+    
     <script src="main.js"></script>
 </body>
+
 </html>
